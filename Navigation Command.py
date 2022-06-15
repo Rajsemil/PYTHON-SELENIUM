@@ -1,0 +1,15 @@
+from selenium import webdriver
+import time
+driver = webdriver.Chrome(executable_path="chromedriver.exe")
+driver.get("http://srgoc.org/SRCEM%20about.htm")
+print(driver.title)
+time.sleep(2)
+driver.get("https://www.google.com/")
+print(driver.title)
+time.sleep(2)
+driver.back() 
+driver.get("https://www.facebook.com/people/Memes-Bachha/100069931656972")
+print(driver.title)
+time.sleep(2)
+driver.forward()
+driver.close()
